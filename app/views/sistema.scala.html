@@ -1,0 +1,79 @@
+@(sistema: String)(versaoDoPlay : String)
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>@sistema</title>
+
+<link href="@routes.Assets.at("dist/css/bootstrap.min.css")"
+rel="stylesheet" media="screen">
+<link rel="stylesheet" media="screen"
+href="@routes.Assets.at("stylesheets/justified-nav.css")">
+<link rel="shortcut icon" type="image/png"
+href="@routes.Assets.at("images/favicon.png")">
+<script
+src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")"
+type="text/javascript">
+
+  </head>
+</script>
+
+</head>
+
+
+
+
+<body>
+
+	<div class="container">
+
+      <div class="masthead">
+        <h3 class="text-muted">Hello World!</h3>
+        <ul class="nav nav-justified">
+          <li class="active"><a href="#">Inicio</a></li>
+          <li><a href="#">Criar Viagem</a></li>
+          <li><a href="#">Minhas viagens</a></li>
+          <li><a href="#">Sair</a></li>
+        </ul>
+      </div>
+      
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>Oi mochileiro!</h1>
+        <p class="lead">Este é um espaço para você saber quais são os destinos da galera, e participar de viagens! Você pode conhecer muita gente nova e viver ótimas experiências! Além disso pode criar seu próprio roteiro e encontrar companhia. Diga Hello World! </p>        
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Crie sua viagem</h2>
+          <p>Ao criar uma nova viagem, devo preencher o local, datas da viagem e uma descrição, e determinar se a viagem é aberta ou limitada. Caso ela seja limitada, devo cadastrar uma senha.</p>
+          <p><a class="btn btn-primary" href="#">Criar</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Editar sua viagem</h2>
+          <p>Mudou de ideia? Aqui você pode editar sua viagem. Os participantes de uma viagem são mantidos, mas o comportamento para o próximo usuário será diferente. 
+         </p>
+          <p><a class="btn btn-primary" href="#">Editar</a></p>
+       </div>
+       <div class="col-lg-4">
+       
+          <center><p><img class="centralizar" src="@routes.Assets.at("images/logop.jpg")" /></p></center>
+       </div>
+        
+      </div>
+
+      <!-- Site footer -->
+      <div class="footer">
+        <p>&copy; Company 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
+</html>
